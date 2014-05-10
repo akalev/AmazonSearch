@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Amazon Search</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="Scripts/functions.js"></script>
+        <link href="Content/bootstrap.min.css" rel="stylesheet" />
+        <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Amazon Web Search</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <form class="navbar-form navbar-right" role="form" onsubmit="SearchByKeyword(); return false;">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="keyword">
+                        </div>
+                        <button type="submit" class="btn btn-success">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="sub-header">Search result</h2>
+            <div class="table-responsive">
+                <table id="result" class="table table-striped"></table>
+            </div>
+        </div>
+    </body>
+</html>
